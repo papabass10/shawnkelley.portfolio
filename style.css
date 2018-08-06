@@ -43,7 +43,7 @@ main {
 	margin-left: .5rem;
 }
 
-#home {
+.home-content {
 	font-size: 5rem;
 	display: flex;
 	flex-direction: column;
