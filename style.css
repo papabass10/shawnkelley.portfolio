@@ -45,6 +45,7 @@ main {
 
 .tab-pane {
 	padding-left: 3.5rem;
+	padding-top: 2rem;
 }
 
 .home-content {
@@ -82,6 +83,10 @@ main {
 	width: 100%;
 }
 
+.carousel-control-icon {
+	height: 2rem;
+}
+
 .carousel-container {
 	display: flex;
 	flex-direction: column;
@@ -92,6 +97,9 @@ main {
 	color: #2c3e50;
 }
 
+.carousel-inner{
+	padding-right: 3.5rem;
+}
 .carousel-control-prev {
 	color: #2c3e50;
 }
@@ -105,8 +113,6 @@ footer {
 	position: absolute; 
     left: 0 ; right: 0; bottom: 0; 
     height: 5rem; 
-}
-	
 }
 
 .small-text {
