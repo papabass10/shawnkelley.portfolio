@@ -100,7 +100,9 @@ main {
 .carousel-inner{
 	padding-right: 3.5rem;
 }
-.carousel-control-prev {
+
+.slide-control {
+	font-size: 3rem;
 	color: #2c3e50;
 }
 
@@ -112,7 +114,14 @@ footer {
 	align-items: center;
 	position: absolute; 
     left: 0 ; right: 0; bottom: 0; 
-    height: 5rem; 
+    height: 2rem; 
+}
+
+.contact-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .small-text {
