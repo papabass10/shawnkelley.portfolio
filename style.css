@@ -99,7 +99,8 @@ main {
 
 .carousel-inner{
 	height: 23rem;
-	width: 35rem;
+	width: 55%;
+	overflow-y: scroll;
 }
 
 .slide-control {
@@ -109,11 +110,11 @@ main {
 }
 
 .control-prev{
-	padding-left: 30rem;
+	margin-left: 20%;
 }
 
 .control-next{
-	padding-right: 25rem;
+	margin-right: 20%;
 }
 
 .contact-content {
