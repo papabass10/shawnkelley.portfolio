@@ -90,10 +90,12 @@ main {
 }
 
 .carousel-control-next {
+	margin-top: 30%
 	height: 5rem;
 }
 
 .carousel-control-prev {
+	margin-top: 30%
 	height: 5rem;
 }
 
