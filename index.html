@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 	<head>
 		<title>Shawn Kelley's Portfolio</title>
@@ -8,7 +9,7 @@
 	<body>
 		<header>
 			<div class="flex-nav">
-				<img class = "logo" alt="logo" src="logo_transparent.png">
+				<img class = "logo" alt="logo" src="./images/logo_transparent.png">
 				<div class="header-text">
 					<h1>Shawn Kelley</h1>
 					<h3>Full Stack Web Developer</h3>
@@ -24,27 +25,111 @@
 						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+						<a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Works</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Works</a>
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<main>
 			<div class="tab-content">
-				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">A new face in Web Development</div>
-				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">.Sem fringilla ut morbi tincidunt augue. Nisl suscipit adipiscing bibendum est ultricies integer. Hac habitasse platea dictumst vestibulum rhoncus. Pretium quam vulputate dignissim suspendisse in est ante. Etiam dignissim diam quis enim lobortis. Proin libero nunc consequat interdum varius sit amet mattis. Volutpat commodo sed egestas egestas fringilla phasellus. Id leo in vitae turpis. Senectus et netus et malesuada fames ac turpis egestas maecenas. Justo donec enim diam vulputate ut pharetra sit amet. Consectetur a erat nam at lectus urna duis. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Hac habitasse platea dictumst quisque sagittis purus sit. Amet facilisis magna etiam tempor orci eu. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Facilisi cras fermentum odio eu feugiat. A lacus vestibulum sed arcu non odio euismod. Et pharetra pharetra massa massa ultricies. Velit euismod in pellentesque massa...</div>
-				<div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">Some works</div>
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<div class = "home-content">A new face in Web Development</div>
+				</div>
+				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="container content-container">
+						<div class="row">
+							<div class="col-6 profile-text">
+								<p>Welcome to my portfolio.  I am Shawn Kelley, and I am a 
+								web developer in Pittsburgh, PA.  Here you will find examples of my work, information
+								to contact me, and a summary my skills and the tools I am familiar with, as well as information
+								about myself.</p>
+								<p>I worked for many years in the financial industry, but am now in the
+									process of transitioning into a development career.  I have dedicated
+									a great deal of time and effort into picking up the required knowledge to make this 
+									transition a reality.</p>
+								<p>On a personal note, I am a skilled musician and love playing stringed instruments of all 
+									kinds, especially guitar and bass.  I am also a huge fan of board games and tabletop rpg games,
+									and I am currently working on developing an app related to this passion (hopefully more on that in 
+									future updates!).
+								</p>
+							</div>
+							<div class="col-6 toolbox">
+								<h3 class="tool-header">My Tools</h3>
+								<img class="tool" alt="html5" src="./images/html-5-icon.png" height="96" width="96">
+								<img class="tool" alt="css3" src="./images/css-3-icon.png" height="96" width="96">
+								<img class="tool" alt="javascript" src="./images/javascript-icon.png" height="96" width="96">
+								<img class="tool" alt="node" src="./images/icons8-nodejs-96.png" height="96" width="96">
+								<img class="tool" alt="react" src="./images/if_React.js_logo_1174949.png" height="96" width="96">
+								<img class="tool" alt="redux" src="./images/redux.png" height="96" width="96">
+								<img class="tool" alt="wordpress" src="./images/wordpress.png" height="96" width="96">
+								<img class="tool" alt="php" src="./images/new-php-logo.png" height="96" width="96">
+								<img class="tool" alt="bootstrap" src="./images/bootstrap.svg" height="96" width="96">
+								<img class="tool" alt="mysql" src="./images/icons8-mysql-logo-filled-96.png" height="96" width="96">
+								<img class="tool" alt="postgresql" src="./images/icons8-postgresql-96.png" height="96" width="96">
+								<img class="tool" alt="github" src="./images/github.svg" height="96" width="96">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+					<div id="carouselExampleControls" class="carousel carousel-container slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<a href="http://www.proshowdjs.com/karaoke/"><img class="d-block w-100" src="./images/proshowdjs.png" alt="Pro Show DJs"></a>
+								<h5>Pro Show DJs</h5>
+								<p>This is a site I created for a DJ and karaoke company in upstate New York.  The site was developed using
+									Wordpress, Javascript, Ajax, and MySQL. The slide links to the karaoke page, which I am quite proud of.
+								</p>
+							</div>
+							<div class="carousel-item">
+								<a href="https://fr-brain.herokuapp.com/"><img class="d-block w-100" src="./images/fr-brain.PNG" alt="Facial Recognition App"></a>
+								<h5>Facial Recognition App</h5>
+								<p>This is a React app that was created as the capstone project of my classwork in The Complete Web Developer in 2018
+									Zero to Mastery course on Udemy.  I created the app, set up the server using Node and Express.js, and designed 
+									implemented a PostgreSQL database schema for tracking users.
+								</p>
+							</div>
+							<div class="carousel-item">
+								<a href="https://papabass10.github.io/Star-wars-app/"><img class="d-block w-100" src="./images/SWAPI.PNG" alt="Swapi"></a>
+								<h5>Star Wars API app</h5>
+								<p>This is a React app I created as part of my coursework in The Complete Web Developer in 2018
+										Zero to Mastery course on Udemy.  We were instructed to design and create an app that used a simple
+										Star Wars themed API, so I set mine up in the form of a simple game.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							<span class="slide-control control-prev" aria-hidden="false"><</span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							<span class="slide-control control-next" aria-hidden="false">></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="contact-content">
+						<h3>Contact me in any of the following ways:</h3>
+						<div="contact-items">
+							<img src="./images/email.jpg" height="50" width="50" onclick='window.open("mailto:shawnkelley2017@gmail.com");'>
+							<a href="http://linkedin.com/in/shawn-kelley-b240812a"><img src="./images/square-linkedin-512.png" height="50" width="50"></a>
+							<a href= "http://github.com/papabass10"><img src="./images/github.svg" height="50" width="50"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer>
-			<p class="small-text">Shawn Kelley Web Design, 2018</p>
+			<p class="small-text">Shawn Kelley Web Development, 2018</p>
 		</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
-</html>
+</html> 
