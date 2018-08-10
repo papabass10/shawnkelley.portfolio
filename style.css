@@ -83,10 +83,6 @@ main {
 	width: 100%;
 }
 
-.carousel-control-icon {
-	height: 2rem;
-}
-
 .carousel-container {
 	display: flex;
 	flex-direction: column;
@@ -94,7 +90,11 @@ main {
 }
 
 .carousel-control-next {
-	color: #2c3e50;
+	height: 5rem;
+}
+
+.carousel-control-prev {
+	height: 5rem;
 }
 
 .carousel-inner{
