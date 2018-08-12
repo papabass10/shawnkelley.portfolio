@@ -28,6 +28,9 @@
 						<a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Works</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" id="samples-tab" data-toggle="tab" href="#samples" role="tab" aria-controls="samples" aria-selected="false">Code Samples</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
 					</li>
 				</ul>
@@ -111,6 +114,86 @@
 							<span class="slide-control control-next" aria-hidden="false">></span>
 							<span class="sr-only">Next</span>
 						</a>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="samples" role="tabpanel" aria-labelledby="samples-tab">
+					<div class="samples-content">
+						<h3> Code samples </h3>
+						<p>Here are some examples of code from projects I have worked on. You can also find
+							further examples in my github page.
+						</p>
+						<div>
+							<h5>Karaoke page queries</h5>
+							<p>These are the querying and sorting functions for the Pro Show DJs Karaoke page.  
+								The functions were written in PHP and recieve the initial parameters from an AJAX call to the form data on the page.</p>
+							<p>First the search creation function:</p>
+							<div class="codeblock">
+								<pre>
+									<code>
+function karaoke_search($options){
+	global $wpdb;
+	$columns = $options['columns'];
+	$searchValue = $options['searchValue'];
+	$duetValue = $options['duetValue'];
+	$vocalValue = $options['vocalValue'];
+	$pageSize = $options['pageSize'];
+	$pageNumber = $options['pageNumber'];
+	$sortResultsBy = $options['sortResultsBy'];
+	$ascDesc = $options['ascDesc'];
+		$columnWhere = parse_where($columns, $searchValue);
+	$duetVocals = parse_where_and($duetValue, $vocalValue);
+	$offsetNumber = $pageSize * ($pageNumber-1);
+	$query = $wpdb->get_results(
+		"SELECT *
+		FROM karaokesongs
+		WHERE ({$columnWhere}) {$duetVocals}
+		ORDER BY {$sortResultsBy} {$ascDesc}
+		LIMIT {$pageSize}
+		OFFSET {$offsetNumber}
+		",
+		ARRAY_A
+	);
+	return $query;
+}
+									</code>
+								</pre>
+							</div>
+							<p>Then the code for parsing the WHERE and ORDER BY strings to allow for searcing by artist or title, and sorting by duets, vocals, both, or neither</p>
+							<div class="codeblock">
+								<pre>
+									<code>
+function parse_where($columns, $searchValue){
+	$columnWhere = "";
+	foreach($columns as $column){
+		$columnWhere .= $column . " LIKE '%" . $searchValue . "%'";
+		if($column !== end($columns)) {
+			$columnWhere .= " OR ";
+		}
+	}
+	return $columnWhere;
+}
+
+function parse_where_and($duetValue, $vocalValue){
+	$duetVocals = "";
+	if($duetValue == 'duet'){
+		$duetVocals .= " AND duet <> ''";
+	}
+	elseif($duetValue == 'no-duets'){
+		$duetVocals .= " AND duet = ''";
+	}
+
+	if($vocalValue == 'vocal'){
+		$duetVocals .= " AND vocal <> ''";
+	}
+	elseif($vocalValue == 'no-vocals'){
+		$duetVocals .= " AND vocal = ''";
+	}
+	return $duetVocals;
+}
+									</code>
+								</pre>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">

@@ -126,6 +126,9 @@ main {
 	justify-content: space-between;
 }
 
+.codeblock {
+	background-color: #e8eef7
+}
 
 footer {
 	background-color: #2c3e50;
